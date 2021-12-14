@@ -1,0 +1,53 @@
+.textContainer {
+  position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 15%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #ff0157;
+    background: #fff;
+    animation: slide 0.5s ease-in-out;
+}
+
+@keyframes slide{
+  0%{
+    transform: scale(.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.activeContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50%;
+  border-top: 2px solid #ddd;
+  margin-top: 10px;
+}
+
+.activeItem {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #1a1a1d;
+  font-weight: bold;
+  font-family: -webkit-pictograph;
+}
+.activeContainer img {
+  padding-left: 10px;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.textContainer h1 {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 320px) and (max-width: 920px) {
+  .textContainer {
+    display: none;
+  }
+}

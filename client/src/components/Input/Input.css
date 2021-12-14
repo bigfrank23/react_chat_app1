@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  border-top: 2px solid #D3D3D3;
+}
+
+input {
+  border: none;
+  border-radius: 0;
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ff0157;
+  padding: 20px;
+  display: inline-block;
+  border: none;
+  outline: 0;
+  transition: letter-spacing .25s ease-in-out;
+  width: 20%;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+}
+.sendButton:hover{
+  letter-spacing: 3px;
+}
+.sendButton:active{
+  background-color: lightblue;
+}
